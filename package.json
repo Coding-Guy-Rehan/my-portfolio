@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-rehan-ahmad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rehan Ahmad — Freelance Shopify Theme Developer Portfolio",
+  "scripts": {
+    "build:css": "npx tailwindcss@3 -i ./css/input.css -o ./css/tailwind.css --minify",
+    "watch:css": "npx tailwindcss@3 -i ./css/input.css -o ./css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

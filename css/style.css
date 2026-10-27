@@ -1,0 +1,40 @@
+/* Custom CSS overrides & micro-interactions */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* GPU Hardware Acceleration for continuous floating animations */
+.floating-portrait,
+.floating-code,
+.floating-badge {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-portrait,
+  .floating-code,
+  .floating-badge {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+

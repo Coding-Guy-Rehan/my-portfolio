@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehan Ahmad — Freelance Shopify Theme Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Freelance Shopify Theme Developer specializing in bespoke, high-converting Liquid themes, AJAX cart drawers, and native Online Store 2.0 experiences.">
+  <meta name="keywords" content="Shopify Developer, Shopify Theme Developer, Freelance Shopify, Liquid, Shopify 2.0, AJAX Cart Drawer, Theme Blocks, Rehan Ahmad">
+  <meta name="author" content="Rehan Ahmad">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rehan Ahmad — Freelance Shopify Theme Developer">
+  <meta property="og:description" content="Distinctive storefronts. Effortless shopping. I turn your brand’s vision into a fast, flexible Shopify experience — built around your customers.">
+  <meta property="og:image" content="images/portrait.png">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rehan Ahmad — Freelance Shopify Theme Developer">
+  <meta name="twitter:description" content="Distinctive storefronts. Effortless shopping. Fast, flexible Shopify theme development built around conversions and merchant ease.">
+  <meta name="twitter:image" content="images/portrait.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#0A0D0C] text-[#F5F7F3] min-h-screen font-sans antialiased selection:bg-[#A0ED70] selection:text-[#0A0D0C]">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#0A0D0C]/80 border-b border-[#2A352D]">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-20 h-[100px] flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="text-[#A0ED70] font-mono font-medium text-2xl">{/}</span>
+        <span class="text-[#F5F7F3] font-semibold text-lg">rehanahmad</span>
+        <span class="text-[#A2ADA5] font-mono text-xs">.dev</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-[#A2ADA5]">
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#work" class="hover:text-white transition-colors">Work</a>
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#contact" class="px-[18px] py-2.5 rounded-lg bg-[#121815] text-[#F5F7F3] font-semibold text-[13px] border border-[#2A352D] hover:bg-[#1A231E] transition-all flex items-center gap-2">
+          Start a project
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </nav>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 bg-[#121815] border border-[#2A352D] rounded-lg z-50 relative" aria-label="Toggle Menu">
+        <span class="w-4 h-[1.5px] bg-[#F5F7F3] transition-transform duration-300 mb-1.5"></span>
+        <span class="w-4 h-[1.5px] bg-[#F5F7F3] transition-transform duration-300"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-[#0A0D0C] z-40 flex flex-col px-6 pt-[120px] pb-10 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+    <nav class="flex flex-col gap-8 text-2xl font-medium text-[#F5F7F3]">
+      <a href="#services" class="mobile-link hover:text-[#A0ED70] transition-colors">Services</a>
+      <a href="#work" class="mobile-link hover:text-[#A0ED70] transition-colors">Work</a>
+      <a href="#about" class="mobile-link hover:text-[#A0ED70] transition-colors">About</a>
+    </nav>
+    
+    <div class="mt-auto flex flex-col gap-5">
+      <div class="flex items-center justify-between py-3 border-y border-[#2A352D] text-xs font-mono text-[#A2ADA5]">
+        <a href="https://www.fiverr.com/s/emmWpkg" target="_blank" rel="noopener noreferrer" class="hover:text-[#A0ED70] transition-colors flex items-center gap-1">
+          Fiverr <span class="text-[9px] text-[#A0ED70] bg-[#1F4F33]/40 px-1 py-0.5 rounded border border-[#A0ED70]/40">5.0★</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rehan-ahmad-540491253" target="_blank" rel="noopener noreferrer" class="hover:text-[#A0ED70] transition-colors flex items-center gap-1">
+          LinkedIn <span class="text-[9px] text-[#717D74]">&nearr;</span>
+        </a>
+        <a href="https://github.com/Coding-Guy-Rehan" target="_blank" rel="noopener noreferrer" class="hover:text-[#A0ED70] transition-colors flex items-center gap-1">
+          GitHub <span class="text-[9px] text-[#717D74]">&nearr;</span>
+        </a>
+      </div>
+      <a href="#contact" class="mobile-link w-full py-4 rounded-xl bg-[#A0ED70] text-[#10200D] font-semibold text-[15px] flex items-center justify-center gap-3 shadow-[0_0_28px_1px_rgba(159,232,112,0.21)]">
+        Start a project
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <main class="pt-[100px] overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative max-w-[1440px] mx-auto px-6 md:px-20 pt-11 pb-8 flex flex-col md:flex-row items-center gap-14">
+      
+      <!-- Gradient atmosphere -->
+      <div class="absolute top-0 w-[1260px] h-[870px] pointer-events-none rounded-full translate-x-[-10%] md:translate-x-[480px]" style="background: radial-gradient(circle at 50% 50%, rgba(61, 105, 53, 0.25) 0%, rgba(31, 79, 51, 0.13) 50%, rgba(10, 13, 12, 0) 100%); z-index: 0;"></div>
+
+      <!-- Hero Copy -->
+      <div class="flex flex-col gap-7 w-full md:w-1/2 z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full overflow-hidden border border-[#59735A] md:hidden shadow-md flex-shrink-0 bg-[#121815]">
+            <picture>
+              <source srcset="images/portrait.webp" type="image/webp">
+              <img src="images/portrait.png" alt="Rehan Ahmad" width="36" height="36" class="w-full h-full object-cover object-top">
+            </picture>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#A0ED70]"></span>
+            <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">FREELANCE SHOPIFY THEME DEVELOPER</span>
+          </div>
+        </div>
+        
+        <h1 class="font-semibold text-5xl md:text-[80px] leading-[1.05em] text-[#F5F7F3]">
+          Custom Shopify.<br>
+          Built to <span class="text-[#A0ED70]">convert.</span>
+        </h1>
+        
+        <p class="text-[#A2ADA5] text-lg leading-[1.65em] max-w-[90%]">
+          Distinctive storefronts. Effortless shopping. I turn your brand’s vision into a fast, flexible Shopify experience — built around your customers.
+        </p>
+        
+        <div class="flex items-center gap-6 mt-2">
+          <a href="#contact" class="px-6 h-14 rounded-lg bg-[#A0ED70] text-[#10200D] font-semibold text-[15px] flex items-center gap-4 hover:bg-[#B7FF8D] transition-colors shadow-[0_0_28px_1px_rgba(159,232,112,0.21)] border border-[#B7FF8D]">
+            Let's Build Your Store.
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          
+          <a href="#work" class="flex items-center gap-2 text-[#F5F7F3] font-medium text-[13px] hover:text-[#A0ED70] transition-colors">
+            Explore the work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </a>
+        </div>
+        
+        <p class="font-mono text-[10px] text-[#717D74] leading-[1.6em] tracking-wider mt-4">
+          LIQUID-FIRST / PERFORMANCE-MINDED / MERCHANT-FRIENDLY
+        </p>
+      </div>
+
+      <!-- Motion-ready portrait stage (Optimized for both mobile and desktop) -->
+      <div class="relative w-full max-w-[360px] sm:max-w-[440px] md:max-w-none md:w-[560px] h-[480px] sm:h-[520px] md:h-[580px] z-10 flex items-center justify-center mx-auto mt-6 md:mt-0 select-none">
+        <!-- Orbits -->
+        <div class="absolute w-[330px] h-[330px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] rounded-full border border-[#2A352D] top-[30px] sm:top-[40px] md:top-[58px] left-[calc(50%-165px)] sm:left-[calc(50%-200px)] md:left-[28px] pointer-events-none"></div>
+        <div class="absolute w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[432px] md:h-[432px] rounded-full border border-[#2F4833] border-dashed top-[55px] sm:top-[70px] md:top-[92px] left-[calc(50%-140px)] sm:left-[calc(50%-170px)] md:left-[62px] pointer-events-none"></div>
+        
+        <!-- Portrait Card -->
+        <div class="floating-portrait absolute w-[280px] sm:w-[320px] md:w-[380px] h-[360px] sm:h-[400px] md:h-[445px] rounded-3xl top-[25px] sm:top-[35px] md:top-[51px] left-[calc(50%-140px)] sm:left-[calc(50%-160px)] md:left-[102px] overflow-hidden flex flex-col justify-between p-4 sm:p-6 shadow-[0_25px_50px_0_rgba(0,0,0,0.7)] border border-[#486046] group select-none">
+          <!-- Real Portrait Image (Optimized WebP with PNG Fallback) -->
+          <picture class="absolute inset-0 w-full h-full pointer-events-none">
+            <source srcset="images/portrait.webp" type="image/webp">
+            <img src="images/portrait.png" alt="Rehan Ahmad - Shopify Theme Developer" width="400" height="600" fetchpriority="high" decoding="async" class="w-full h-full object-cover object-top filter brightness-[0.96] contrast-[1.04] transition-transform duration-700 group-hover:scale-105 pointer-events-none">
+          </picture>
+          
+          <!-- Gradient Vignette -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0A0D0C]/95 via-[#0A0D0C]/15 to-[#0A0D0C]/45 pointer-events-none"></div>
+
+          <!-- Top Status Bar -->
+          <div class="relative z-10 flex justify-between items-center w-full gap-2">
+            <span class="font-mono text-[9px] sm:text-[10px] text-[#A0ED70] bg-[#0A0D0C]/80 backdrop-blur-md px-2.5 sm:px-3 py-1 rounded-full border border-[#2A352D]">portrait / 01</span>
+            <div class="flex items-center gap-1.5 bg-[#0A0D0C]/80 backdrop-blur-md px-2.5 sm:px-3 py-1 rounded-full border border-[#2A352D]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#A0ED70] animate-pulse"></span>
+              <span class="font-mono text-[8px] sm:text-[9px] text-[#F5F7F3] tracking-wider">AVAILABLE<span class="hidden sm:inline"> FOR PROJECTS</span></span>
+            </div>
+          </div>
+          
+          <!-- Bottom Floating Glass Pill -->
+          <div class="relative z-10 flex flex-col gap-2">
+            <div class="p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-[#0F1411]/90 backdrop-blur-md border border-[#2A352D] flex items-center justify-between shadow-xl">
+              <div class="flex flex-col">
+                <span class="font-medium text-xs sm:text-sm text-[#F5F7F3] leading-snug">Shopify Theme Developer</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-[#A0ED70]">Liquid & Storefront UX Specialist</span>
+              </div>
+              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#19241B] border border-[#3C573A] flex items-center justify-center text-[#A0ED70] font-mono text-xs font-bold shadow-inner flex-shrink-0">{/}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Liquid Code Motif -->
+        <div class="floating-code absolute left-1 sm:left-2 md:left-[-20px] top-[335px] sm:top-[350px] md:top-[315px] p-3 sm:p-4 md:p-[18px] w-[205px] sm:w-[230px] md:w-[265px] bg-[rgba(23,32,27,0.92)] border border-[#3C4D40] rounded-xl sm:rounded-2xl shadow-[0_20px_40px_0_rgba(0,0,0,0.6)] backdrop-blur-md z-20">
+          <div class="flex items-center gap-1.5 mb-2 sm:mb-3">
+            <div class="w-1.5 h-1.5 rounded-full bg-[#A0ED70]"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-[#717D74]"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-[#717D74]"></div>
+            <span class="font-mono text-[8px] sm:text-[9px] text-[#A2ADA5] ml-1">theme.liquid</span>
+          </div>
+          <pre class="font-mono text-[10px] sm:text-[11px] md:text-[12px] text-[#A0ED70] leading-[1.6em]">{% render 'your-vision' %}
+  &lt;built-for-growth /&gt;</pre>
+        </div>
+
+        <!-- Dev Status Badge -->
+        <div class="floating-badge absolute right-1 sm:right-2 md:right-auto md:left-[282px] top-[425px] sm:top-[450px] md:top-[506px] px-3 sm:px-3.5 py-1.5 sm:py-2.5 bg-[#121815] border border-[#2A352D] rounded-full flex items-center gap-1.5 sm:gap-2 z-20 shadow-lg">
+          <div class="w-1.5 h-1.5 rounded-full bg-[#A0ED70] shadow-[0_0_28px_1px_rgba(159,232,112,0.21)] animate-pulse"></div>
+          <span class="font-mono text-[9px] sm:text-[10px] text-[#F5F7F3]">Your vision. Clean code.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-[1440px] mx-auto px-6 md:px-20 py-6 flex justify-between items-center border-t border-[#2A352D] mt-10">
+      <p class="text-[11px] text-[#717D74] leading-[1.5em]">For ambitious brands & teams that care about the details.</p>
+      <div class="flex items-center gap-2">
+        <span class="font-mono text-[10px] text-[#717D74]">SCROLL TO EXPLORE</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#717D74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      </div>
+    </div>
+    
+    <!-- Technology Stack -->
+    <section id="tech-stack" class="max-w-[1440px] mx-auto bg-[#0F1311] border-y border-[#2A352D] py-9 px-6 md:px-20 flex flex-col gap-6">
+      <div class="flex justify-between items-center flex-wrap gap-4">
+        <span class="font-mono text-[10px] text-[#A2ADA5]">THE RIGHT TOOLS. NO EXTRA WEIGHT.</span>
+        <span class="font-mono text-[10px] text-[#717D74]">BUILT ON SHOPIFY’S NATIVE STACK</span>
+      </div>
+      
+      <div class="flex flex-wrap gap-3">
+        <!-- Shopify Liquid -->
+        <div class="flex items-center gap-3 bg-[#121815] rounded-lg px-4 py-6 border border-[#2A352D] flex-1 min-w-[200px]">
+          <div class="w-9 h-10 flex items-center justify-center">
+            <svg width="30" height="34" viewBox="0 0 24 24" fill="none" stroke="#A0ED70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="font-medium text-[13px] text-[#F5F7F3]">Shopify Liquid</span>
+            <span class="font-mono text-[9px] text-[#717D74]">Native by design</span>
+          </div>
+        </div>
+        
+        <!-- HTML -->
+        <div class="flex items-center gap-3 bg-[#121815] rounded-lg px-4 py-6 border border-[#2A352D] flex-1 min-w-[200px]">
+          <div class="w-9 h-10 flex items-center justify-center">
+            <span class="font-mono font-semibold text-[#A0ED70] text-[14px]">HTML</span>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="font-medium text-[13px] text-[#F5F7F3]">HTML</span>
+            <span class="font-mono text-[9px] text-[#717D74]">Semantic foundations</span>
+          </div>
+        </div>
+        
+        <!-- CSS -->
+        <div class="flex items-center gap-3 bg-[#121815] rounded-lg px-4 py-6 border border-[#2A352D] flex-1 min-w-[200px]">
+          <div class="w-9 h-10 flex items-center justify-center">
+            <span class="font-mono font-semibold text-[#A0ED70] text-[14px]">CSS</span>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="font-medium text-[13px] text-[#F5F7F3]">CSS</span>
+            <span class="font-mono text-[9px] text-[#717D74]">Pixel-level precision</span>
+          </div>
+        </div>
+        
+        <!-- JS -->
+        <div class="flex items-center gap-3 bg-[#121815] rounded-lg px-4 py-6 border border-[#2A352D] flex-1 min-w-[200px]">
+          <div class="w-9 h-10 flex items-center justify-center">
+            <span class="font-mono font-semibold text-[#A0ED70] text-xl">JS</span>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="font-medium text-[13px] text-[#F5F7F3]">Vanilla JavaScript</span>
+            <span class="font-mono text-[9px] text-[#717D74]">Less weight. More speed.</span>
+          </div>
+        </div>
+        
+        <!-- Web components -->
+        <div class="flex items-center gap-3 bg-[#121815] rounded-lg px-4 py-6 border border-[#2A352D] flex-1 min-w-[200px]">
+          <div class="w-9 h-10 flex items-center justify-center">
+            <span class="font-mono font-semibold text-[#A0ED70] text-[14px]">&lt;/&gt;</span>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="font-medium text-[13px] text-[#F5F7F3]">Web components</span>
+            <span class="font-mono text-[9px] text-[#717D74]">Reusable & resilient</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services -->
+    <section id="services" class="max-w-[1440px] mx-auto px-6 md:px-20 py-24 flex flex-col gap-10">
+      <div class="flex flex-col gap-5">
+        <div class="flex items-center gap-2.5">
+          <div class="w-3.5 h-[2px] bg-[#A0ED70]"></div>
+          <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">01 / What I build</span>
+        </div>
+        <h2 class="font-semibold text-5xl leading-[1.12em] text-[#F5F7F3]">Your brand. Without the limits.</h2>
+        <p class="text-[#A2ADA5] text-base leading-[1.6em] max-w-2xl">
+          Shopify-native development that balances brand expression with a better buying experience.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Service 1 -->
+        <div class="flex flex-col rounded-3xl border border-[#2A352D] bg-[rgba(23,32,27,0.85)] p-7 gap-6 hover:border-[#6A9F50] hover:bg-[rgba(24,37,27,0.85)] hover:shadow-[0_0_28px_1px_rgba(159,232,112,0.21)]">
+          <div class="h-[132px] rounded-2xl bg-[#0D120F] flex items-center justify-center p-3">
+            <div class="w-[232px] h-[117px] bg-[#19211C] border border-[#2A352D] rounded-lg p-3 flex flex-col gap-2.5">
+              <div class="flex justify-between items-center w-full">
+                <div class="w-6 h-1.5 bg-[#A0ED70]"></div>
+                <div class="w-14 h-2 bg-[#717D74]"></div>
+              </div>
+              <div class="flex gap-3 mt-1">
+                <div class="flex flex-col gap-1.5 flex-1">
+                  <div class="w-20 h-3 bg-[#F5F7F3]"></div>
+                  <div class="w-16 h-2 bg-[#717D74]"></div>
+                  <div class="w-9 h-3.5 bg-[#A0ED70] rounded-sm mt-1"></div>
+                </div>
+                <div class="w-[82px] h-[65px] bg-[#334B36] rounded-md"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3.5">
+            <h3 class="font-medium text-2xl text-[#F5F7F3]">Custom Theme Development</h3>
+            <p class="text-[#A2ADA5] text-sm leading-[1.65em]">A storefront that feels unmistakably yours. Crafted from your design, with thoughtful UX and a clean Liquid foundation.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Liquid</span>
+            <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Online Store 2.0</span>
+          </div>
+          <a href="#contact" data-service="Custom theme" class="service-cta flex justify-between items-center mt-auto pt-2 group cursor-pointer">
+            <span class="text-[#F5F7F3] text-xs group-hover:text-[#A0ED70] transition-colors">Let's talk details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F5F7F3] group-hover:text-[#A0ED70] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="flex flex-col rounded-3xl  border border-[#2A352D] bg-[rgba(23,32,27,0.85)] p-7 gap-6 hover:border-[#6A9F50] hover:bg-[rgba(24,37,27,0.85)] hover:shadow-[0_0_28px_1px_rgba(159,232,112,0.21)]">
+          <div class="h-[132px] rounded-2xl bg-[#0D120F] flex items-center justify-center p-3">
+            <div class="w-full max-w-[245px] bg-[#19211C] border border-[#6A9F50] rounded-lg p-3.5 flex flex-col gap-2.5">
+              <div class="flex justify-between items-center w-full">
+                <span class="font-semibold text-[10px] text-[#F5F7F3]">Your bag (1)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F5F7F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 bg-[#456044] rounded"></div>
+                <div class="flex flex-col gap-1 flex-1">
+                  <span class="text-[9px] text-[#F5F7F3]">Everyday essentials</span>
+                  <span class="font-mono text-[9px] text-[#A2ADA5]">- 1 +</span>
+                </div>
+                <span class="text-[10px] text-[#F5F7F3]">$48</span>
+              </div>
+              <div class="h-7 w-full bg-[#A0ED70] rounded flex items-center justify-center mt-1">
+                <span class="font-semibold text-[8px] text-[#10200D]">Checkout &rarr;</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3.5">
+            <h3 class="font-medium text-2xl text-[#F5F7F3]">AJAX Cart Drawers</h3>
+            <p class="text-[#A2ADA5] text-sm leading-[1.65em]">Keep shoppers in the flow. Seamless add-to-cart, live updates and intuitive cart interactions — without a page reload.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Cart API</span>
+            <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Vanilla JS</span>
+          </div>
+          <a href="#contact" data-service="Cart drawer" class="service-cta flex justify-between items-center mt-auto pt-2 group cursor-pointer">
+            <span class="text-[#A0ED70] text-xs group-hover:underline transition-colors">Let's talk details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A0ED70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="flex flex-col rounded-3xl border border-[#2A352D] bg-[rgba(23,32,27,0.85)] p-7 gap-6 hover:border-[#6A9F50] hover:bg-[rgba(24,37,27,0.85)] hover:shadow-[0_0_28px_1px_rgba(159,232,112,0.21)]">
+          <div class="h-[132px] rounded-2xl bg-[#0D120F] flex items-center justify-center p-3">
+             <div class="flex flex-col gap-2 w-full max-w-[232px]">
+               <div class="flex items-center gap-2.5 bg-[#19211C] border border-[#2A352D] rounded-md p-2.5">
+                 <svg width="13" height="18" viewBox="0 0 24 24" fill="none" stroke="#A2ADA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="5" r="1"></circle><circle cx="9" cy="19" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="5" r="1"></circle><circle cx="15" cy="19" r="1"></circle></svg>
+                 <span class="font-mono text-[10px] text-[#F5F7F3] flex-1">Featured collection</span>
+                 <span class="font-mono text-[10px] text-[#A0ED70]">{ }</span>
+               </div>
+               <div class="flex gap-2">
+                 <div class="flex-1 h-12 rounded-md border border-[#3D5540] bg-[#223026] flex items-center justify-center">
+                   <span class="font-mono text-[9px] text-[#A0ED70]">Product</span>
+                 </div>
+                 <div class="flex-1 h-12 rounded-md border border-[#3D5540] bg-[#223026] flex items-center justify-center">
+                   <span class="font-mono text-[9px] text-[#A0ED70]">Story</span>
+                 </div>
+                 <div class="flex-1 h-12 rounded-md border border-[#3D5540] bg-[#223026] flex items-center justify-center">
+                   <span class="font-mono text-[9px] text-[#A0ED70]">FAQ</span>
+                 </div>
+               </div>
+             </div>
+          </div>
+          <div class="flex flex-col gap-3.5">
+            <h3 class="font-medium text-2xl text-[#F5F7F3]">Bespoke Theme Blocks</h3>
+            <p class="text-[#A2ADA5] text-sm leading-[1.65em]">More freedom for your team. Reusable, configurable blocks that make every page easier to build and maintain.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Theme blocks</span>
+            <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Web components</span>
+          </div>
+          <a href="#contact" data-service="Theme blocks" class="service-cta flex justify-between items-center mt-auto pt-2 group cursor-pointer">
+            <span class="text-[#F5F7F3] text-xs group-hover:text-[#A0ED70] transition-colors">Let's talk details</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F5F7F3] group-hover:text-[#A0ED70] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Selected Concepts (Work) -->
+    <section id="work" class="max-w-[1440px] mx-auto px-6 md:px-20 pb-24 flex flex-col gap-10">
+      <div class="flex flex-col gap-5">
+        <div class="flex items-center gap-2.5">
+          <div class="w-3.5 h-[2px] bg-[#A0ED70]"></div>
+          <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">02 / Featured Client Work</span>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <h2 class="font-semibold text-5xl leading-[1.12em] text-[#F5F7F3]">Commerce, with character.</h2>
+          <p class="text-[#A2ADA5] text-xs leading-[1.6em] max-w-[340px]">
+            Selected live Shopify storefronts built for international brands — engineered for distinct character, conversion speed, and flawless checkout.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+        
+        <!-- Project 1 & Project 2 (Column 1) -->
+        <div class="flex flex-col gap-10">
+          <!-- Project 1: Narae London -->
+          <a href="https://narae.co.uk/" target="_blank" rel="noopener noreferrer" class="group flex flex-col gap-5 block focus:outline-none">
+            <!-- Project Thumbnail -->
+            <div class="bg-[#EDE6D8] rounded-2xl p-7 flex justify-center h-[408px] overflow-hidden relative transition-all duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+              <div class="w-full max-w-[320px] bg-[#111613] border border-[rgba(255,255,255,0.25)] shadow-[0_20px_40px_0_rgba(0,0,0,0.5)] rounded-lg overflow-hidden flex flex-col transition-transform duration-500 group-hover:scale-[1.02]">
+                <!-- Browser Bar -->
+                <div class="h-10 bg-[#1E2520] border-b border-[rgba(255,255,255,0.08)] flex items-center px-2.5 gap-1.5">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FF5F56]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FFBD2E]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#27C93F]/80"></div>
+                  <span class="font-mono text-[8px] text-[#A2ADA5] ml-auto mr-auto tracking-tight">narae.co.uk</span>
+                  <span class="font-mono text-[7px] text-[#A0ED70] bg-[#1F4F33]/40 px-1 py-0.5 rounded border border-[#A0ED70]/40">LIVE</span>
+                </div>
+                <!-- Store Nav -->
+                <div class="h-12 bg-black/60 backdrop-blur-sm flex justify-between items-center px-4 border-b border-white/5">
+                  <span class="font-semibold text-[13px] tracking-wider text-white">NARAE</span>
+                  <span class="text-[8px] text-[#A2ADA5]">Shop &nbsp; Science &nbsp; Bag (0)</span>
+                </div>
+                <!-- Store Hero with Real Image -->
+                <div class="flex-1 relative overflow-hidden flex items-end p-4">
+                  <img src="images/work-narae.jpg" alt="Narae London Storefront" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+                  <div class="relative z-10 flex flex-col gap-2">
+                    <span class="font-mono text-[7px] text-[#A0ED70] tracking-wider uppercase">KOREAN GLASS MASK</span>
+                    <h4 class="font-medium text-lg text-white leading-tight">Daily rituals.<br>Lasting radiance.</h4>
+                    <div class="px-2.5 py-1 bg-[#A0ED70] rounded-sm self-start mt-0.5 flex items-center gap-1">
+                      <span class="text-[8px] font-semibold text-[#10200D]">Visit store &nearr;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Details -->
+            <div class="flex flex-col px-1 gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-mono text-[10px] text-[#717D74] tracking-wider uppercase">BEAUTY & SKINCARE</span>
+                <span class="font-mono text-[9px] text-[#A0ED70] bg-[rgba(31,79,51,0.2)] px-2 py-0.5 rounded-full border border-[#A0ED70]/60 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#A0ED70] animate-pulse"></span>
+                  LIVE CLIENT STORE
+                </span>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="font-medium text-[27px] text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">Narae London</h3>
+                <div class="w-8 h-8 rounded-full border border-[#2A352D] bg-[#19211C] flex items-center justify-center text-[#F5F7F3] group-hover:border-[#A0ED70] group-hover:text-[#A0ED70] group-hover:bg-[#1F4F33]/30 transition-all flex-shrink-0">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+              <p class="text-[#A2ADA5] text-sm leading-[1.6em]">High-converting UK storefront for bio-cellulose Korean glass masks and glow serums, engineered with custom bundle architecture and rapid mobile checkout.</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Online Store 2.0</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Conversion UX</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Custom Liquid</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Project 2: Modesia UK (Offset height in masonry) -->
+          <a href="https://modesia.co.uk/" target="_blank" rel="noopener noreferrer" class="group flex flex-col gap-5 mt-10 block focus:outline-none">
+            <!-- Project Thumbnail -->
+            <div class="bg-[#B9C8C7] rounded-2xl p-7 flex justify-center h-[340px] overflow-hidden relative transition-all duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+              <div class="w-full max-w-[320px] bg-[#111613] border border-[rgba(255,255,255,0.25)] shadow-[0_20px_40px_0_rgba(0,0,0,0.5)] rounded-lg overflow-hidden flex flex-col transition-transform duration-500 group-hover:scale-[1.02]">
+                <!-- Browser Bar -->
+                <div class="h-10 bg-[#1E2520] border-b border-[rgba(255,255,255,0.08)] flex items-center px-2.5 gap-1.5">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FF5F56]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FFBD2E]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#27C93F]/80"></div>
+                  <span class="font-mono text-[8px] text-[#A2ADA5] ml-auto mr-auto tracking-tight">modesia.co.uk</span>
+                  <span class="font-mono text-[7px] text-[#A0ED70] bg-[#1F4F33]/40 px-1 py-0.5 rounded border border-[#A0ED70]/40">LIVE</span>
+                </div>
+                <!-- Store Nav -->
+                <div class="h-12 bg-black/60 backdrop-blur-sm flex justify-between items-center px-4 border-b border-white/5">
+                  <span class="font-semibold text-[13px] tracking-wider text-white">MODESIA</span>
+                  <span class="text-[8px] text-[#A2ADA5]">Dresses &nbsp; New &nbsp; Cart (0)</span>
+                </div>
+                <!-- Store Hero with Real Image -->
+                <div class="flex-1 relative overflow-hidden flex items-end p-4">
+                  <img src="images/work-modesia.jpg" alt="Modesia UK Store" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+                  <div class="relative z-10 flex flex-col gap-2">
+                    <span class="font-mono text-[7px] text-[#A0ED70] tracking-wider uppercase">CONTEMPORARY OCCASION WEAR</span>
+                    <h4 class="font-medium text-lg text-white leading-tight">Elevated dresses.<br>Modern elegance.</h4>
+                    <div class="px-2.5 py-1 bg-[#A0ED70] rounded-sm self-start mt-0.5 flex items-center gap-1">
+                      <span class="text-[8px] font-semibold text-[#10200D]">Visit store &nearr;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Details -->
+            <div class="flex flex-col px-1 gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-mono text-[10px] text-[#717D74] tracking-wider uppercase">APPAREL & FASHION</span>
+                <span class="font-mono text-[9px] text-[#A0ED70] bg-[rgba(31,79,51,0.2)] px-2 py-0.5 rounded-full border border-[#A0ED70]/60 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#A0ED70] animate-pulse"></span>
+                  LIVE CLIENT STORE
+                </span>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="font-medium text-[27px] text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">Modesia UK</h3>
+                <div class="w-8 h-8 rounded-full border border-[#2A352D] bg-[#19211C] flex items-center justify-center text-[#F5F7F3] group-hover:border-[#A0ED70] group-hover:text-[#A0ED70] group-hover:bg-[#1F4F33]/30 transition-all flex-shrink-0">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+              <p class="text-[#A2ADA5] text-sm leading-[1.6em]">Contemporary British occasion wear and evening apparel boutique built with AJAX slide-out cart drawers, dynamic color swatch filters, and curated collection storytelling.</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">AJAX Cart Drawer</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Collection Filtering</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Variant Matrix</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Project 3 & Project 4 (Column 2) -->
+        <div class="flex flex-col gap-10">
+          <!-- Project 3: Pacu Studios -->
+          <a href="https://pacu-studios.de/" target="_blank" rel="noopener noreferrer" class="group flex flex-col gap-5 block focus:outline-none">
+            <!-- Project Thumbnail -->
+            <div class="bg-[#C6AA8D] rounded-2xl p-7 flex justify-center h-[340px] overflow-hidden relative transition-all duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+              <div class="w-full max-w-[320px] bg-[#111613] border border-[rgba(255,255,255,0.25)] shadow-[0_20px_40px_0_rgba(0,0,0,0.5)] rounded-lg overflow-hidden flex flex-col transition-transform duration-500 group-hover:scale-[1.02]">
+                <!-- Browser Bar -->
+                <div class="h-10 bg-[#1E2520] border-b border-[rgba(255,255,255,0.08)] flex items-center px-2.5 gap-1.5">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FF5F56]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FFBD2E]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#27C93F]/80"></div>
+                  <span class="font-mono text-[8px] text-[#A2ADA5] ml-auto mr-auto tracking-tight">pacu-studios.de</span>
+                  <span class="font-mono text-[7px] text-[#A0ED70] bg-[#1F4F33]/40 px-1 py-0.5 rounded border border-[#A0ED70]/40">LIVE</span>
+                </div>
+                <!-- Store Nav -->
+                <div class="h-12 bg-black/60 backdrop-blur-sm flex justify-between items-center px-4 border-b border-white/5">
+                  <span class="font-semibold text-[13px] tracking-wider text-white">PACU STUDIOS</span>
+                  <span class="text-[8px] text-[#A2ADA5]">Objects &nbsp; About &nbsp; Bag (0)</span>
+                </div>
+                <!-- Store Hero with Real Image -->
+                <div class="flex-1 relative overflow-hidden flex items-end p-4">
+                  <img src="images/work-pacu.jpg" alt="Pacu Studios Store" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+                  <div class="relative z-10 flex flex-col gap-2">
+                    <span class="font-mono text-[7px] text-[#A0ED70] tracking-wider uppercase">MUNICH · FEATURED IN VOGUE</span>
+                    <h4 class="font-medium text-lg text-white leading-tight">Solid travertine.<br>Incense rituals.</h4>
+                    <div class="px-2.5 py-1 bg-[#A0ED70] rounded-sm self-start mt-0.5 flex items-center gap-1">
+                      <span class="text-[8px] font-semibold text-[#10200D]">Visit store &nearr;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Details -->
+            <div class="flex flex-col px-1 gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-mono text-[10px] text-[#717D74] tracking-wider uppercase">SCULPTURAL OBJECTS</span>
+                <span class="font-mono text-[9px] text-[#A0ED70] bg-[rgba(31,79,51,0.2)] px-2 py-0.5 rounded-full border border-[#A0ED70]/60 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#A0ED70] animate-pulse"></span>
+                  LIVE CLIENT STORE
+                </span>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="font-medium text-[27px] text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">Pacu Studios</h3>
+                <div class="w-8 h-8 rounded-full border border-[#2A352D] bg-[#19211C] flex items-center justify-center text-[#F5F7F3] group-hover:border-[#A0ED70] group-hover:text-[#A0ED70] group-hover:bg-[#1F4F33]/30 transition-all flex-shrink-0">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+              <p class="text-[#A2ADA5] text-sm leading-[1.6em]">Vogue-featured Munich studio crafting architectural incense holders from solid travertine and marble. Engineered with tactile Liquid modules and bespoke product micro-interactions.</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Bespoke Liquid</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Vogue Featured</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Tactile Minimal UX</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Project 4: Lampconcept Sweden (Offset height in masonry) -->
+          <a href="https://lampconcept.se/" target="_blank" rel="noopener noreferrer" class="group flex flex-col gap-5 mt-10 block focus:outline-none">
+            <!-- Project Thumbnail -->
+            <div class="bg-[#D7DEC6] rounded-2xl p-7 flex justify-center h-[408px] overflow-hidden relative transition-all duration-300 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+              <div class="w-full max-w-[320px] bg-[#111613] border border-[rgba(255,255,255,0.25)] shadow-[0_20px_40px_0_rgba(0,0,0,0.5)] rounded-lg overflow-hidden flex flex-col transition-transform duration-500 group-hover:scale-[1.02]">
+                <!-- Browser Bar -->
+                <div class="h-10 bg-[#1E2520] border-b border-[rgba(255,255,255,0.08)] flex items-center px-2.5 gap-1.5">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FF5F56]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#FFBD2E]/80"></div>
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#27C93F]/80"></div>
+                  <span class="font-mono text-[8px] text-[#A2ADA5] ml-auto mr-auto tracking-tight">lampconcept.se</span>
+                  <span class="font-mono text-[7px] text-[#A0ED70] bg-[#1F4F33]/40 px-1 py-0.5 rounded border border-[#A0ED70]/40">LIVE</span>
+                </div>
+                <!-- Store Nav -->
+                <div class="h-12 bg-black/60 backdrop-blur-sm flex justify-between items-center px-4 border-b border-white/5">
+                  <span class="font-semibold text-[13px] tracking-wider text-white">LAMPCONCEPT</span>
+                  <span class="text-[8px] text-[#A2ADA5]">Belysning &nbsp; Rum &nbsp; Varukorg (0)</span>
+                </div>
+                <!-- Store Hero with Real Image -->
+                <div class="flex-1 relative overflow-hidden flex items-end p-4">
+                  <img src="images/work-lampconcept.jpg" alt="Lampconcept Sweden Store" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+                  <div class="relative z-10 flex flex-col gap-2">
+                    <span class="font-mono text-[7px] text-[#A0ED70] tracking-wider uppercase">SCANDINAVIAN INTERIORS</span>
+                    <h4 class="font-medium text-lg text-white leading-tight">Modern lighting.<br>Swedish design.</h4>
+                    <div class="px-2.5 py-1 bg-[#A0ED70] rounded-sm self-start mt-0.5 flex items-center gap-1">
+                      <span class="text-[8px] font-semibold text-[#10200D]">Visit store &nearr;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Details -->
+            <div class="flex flex-col px-1 gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-mono text-[10px] text-[#717D74] tracking-wider uppercase">INTERIORS & LIGHTING</span>
+                <span class="font-mono text-[9px] text-[#A0ED70] bg-[rgba(31,79,51,0.2)] px-2 py-0.5 rounded-full border border-[#A0ED70]/60 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#A0ED70] animate-pulse"></span>
+                  LIVE CLIENT STORE
+                </span>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <h3 class="font-medium text-[27px] text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">Lampconcept Sweden</h3>
+                <div class="w-8 h-8 rounded-full border border-[#2A352D] bg-[#19211C] flex items-center justify-center text-[#F5F7F3] group-hover:border-[#A0ED70] group-hover:text-[#A0ED70] group-hover:bg-[#1F4F33]/30 transition-all flex-shrink-0">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+              <p class="text-[#A2ADA5] text-sm leading-[1.6em]">Extensive Swedish e-commerce lighting store featuring high-capacity collection filtering, modular room-by-room sections, and Core Web Vitals performance optimization.</p>
+              <div class="flex flex-wrap gap-2 mt-1">
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Catalog Architecture</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Faceted Filters</span>
+                <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Speed & Core Web Vitals</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+
+      <!-- Additional Client Stores Ticker / Quick List -->
+      <div class="mt-4 pt-8 border-t border-[#2A352D]/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-[11px] text-[#717D74] uppercase tracking-wider">More live client stores:</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5">
+          <a href="https://vescartes.com/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full border border-[#2A352D] bg-[#131A15] hover:border-[#A0ED70]/60 hover:text-[#A0ED70] font-mono text-[11px] text-[#A2ADA5] transition-colors flex items-center gap-1.5">
+            <span>Vescartes London</span>
+            <span class="text-[9px] text-[#717D74]">&nearr;</span>
+          </a>
+          <a href="https://www.milo-moon.nl/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full border border-[#2A352D] bg-[#131A15] hover:border-[#A0ED70]/60 hover:text-[#A0ED70] font-mono text-[11px] text-[#A2ADA5] transition-colors flex items-center gap-1.5">
+            <span>Milo &amp; Moon</span>
+            <span class="text-[9px] text-[#717D74]">&nearr;</span>
+          </a>
+          <a href="https://hudsonparker-boston.com/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full border border-[#2A352D] bg-[#131A15] hover:border-[#A0ED70]/60 hover:text-[#A0ED70] font-mono text-[11px] text-[#A2ADA5] transition-colors flex items-center gap-1.5">
+            <span>Hudson Parker</span>
+            <span class="text-[9px] text-[#717D74]">&nearr;</span>
+          </a>
+          <a href="https://chokebuddy.nl/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full border border-[#2A352D] bg-[#131A15] hover:border-[#A0ED70]/60 hover:text-[#A0ED70] font-mono text-[11px] text-[#A2ADA5] transition-colors flex items-center gap-1.5">
+            <span>Choke Buddy</span>
+            <span class="text-[9px] text-[#717D74]">&nearr;</span>
+          </a>
+          <a href="https://drezma.com/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full border border-[#2A352D] bg-[#131A15] hover:border-[#A0ED70]/60 hover:text-[#A0ED70] font-mono text-[11px] text-[#A2ADA5] transition-colors flex items-center gap-1.5">
+            <span>Drezma</span>
+            <span class="text-[9px] text-[#717D74]">&nearr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer and process -->
+    <section id="about" class="bg-[#0F1411] border-y border-[#2A352D] py-24">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-20 flex flex-col gap-20">
+        
+        <!-- Developer Profile Area -->
+        <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24">
+          <!-- Text Content -->
+          <div class="flex flex-col gap-6 flex-1">
+            <div class="flex flex-col gap-5">
+              <div class="flex items-center gap-2.5">
+                <div class="w-3.5 h-[2px] bg-[#A0ED70]"></div>
+                <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">03 / Behind the build</span>
+              </div>
+              <h2 class="font-semibold text-5xl leading-[1.12em] text-[#F5F7F3]">A developer who thinks<br>like a store owner.</h2>
+            </div>
+            
+            <p class="text-[#A2ADA5] text-base leading-[1.7em]">
+              I’m <span class="text-[#F5F7F3]">Rehan Ahmad</span>, a freelance Shopify Theme Developer. My focus is simple: translate your brand into a storefront that is beautiful to explore, easy to shop and practical to manage.
+            </p>
+            <p class="text-[#A2ADA5] text-sm leading-[1.7em]">
+              Clean code is only half the story. Clear communication, considered details and a merchant-friendly handover are part of the build.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mt-2">
+              <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Direct collaboration</span>
+              <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Thoughtful UX</span>
+              <span class="px-2.5 py-1.5 rounded-full border border-[#2A352D] bg-[#19211C] font-mono text-[10px] text-[#A2ADA5]">Maintainable code</span>
+            </div>
+          </div>
+          
+          <!-- Profile Card -->
+          <div class="flex flex-col bg-[#121815] border border-[#2A352D] rounded-3xl p-8 w-full md:w-[484px] gap-6">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-1.5">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#A0ED70]"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-[#717D74]"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-[#717D74]"></div>
+              </div>
+              <span class="font-mono text-[10px] text-[#717D74]">developer.profile</span>
+            </div>
+            
+            <div class="flex items-center gap-5">
+              <div class="w-[72px] h-[72px] rounded-2xl overflow-hidden border border-[#486046] shadow-lg flex-shrink-0 bg-[#0F1411]">
+                <picture>
+                  <source srcset="images/portrait.webp" type="image/webp">
+                  <img src="images/portrait.png" alt="Rehan Ahmad - Shopify Theme Developer" width="72" height="72" loading="lazy" class="w-full h-full object-cover object-top filter brightness-[0.96] contrast-[1.04]">
+                </picture>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-mono text-xs text-[#A0ED70]">{ rehan }</span>
+                <span class="font-medium text-2xl text-[#F5F7F3] leading-tight">Rehan Ahmad</span>
+                <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">SHOPIFY THEME DEVELOPER</span>
+              </div>
+            </div>
+            
+            <div class="w-full h-[1px] bg-[#2A352D]"></div>
+            
+            <div class="font-mono text-[11px] text-[#A2ADA5] leading-[1.9em]">
+              <span class="text-[#717D74]">focus:</span> <span class="text-[#A0ED70]">"Commerce & storefront UX"</span><br>
+              <span class="text-[#717D74]">stack:</span> "Liquid, JS, Web components"<br>
+              <span class="text-[#717D74]">approach:</span> "Native. Lean. Reusable."
+            </div>
+            
+            <div class="w-full h-[1px] bg-[#2A352D]"></div>
+            
+            <p class="text-[#A2ADA5] text-sm leading-[1.6em]">Building your Shopify team? Let’s talk about freelance collaboration or your next developer role.</p>
+            
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <a href="https://www.fiverr.com/s/emmWpkg" target="_blank" rel="noopener noreferrer" class="h-10 bg-[#19211C] border border-[#2A352D] rounded-lg flex items-center justify-center gap-1.5 hover:border-[#A0ED70] hover:text-[#A0ED70] text-[#A2ADA5] text-xs font-mono transition-colors">
+                <span class="text-[#F5F7F3]">Fiverr</span>
+                <span class="text-[9px] text-[#A0ED70]">5★</span>
+              </a>
+              <a href="https://www.linkedin.com/in/rehan-ahmad-540491253" target="_blank" rel="noopener noreferrer" class="h-10 bg-[#19211C] border border-[#2A352D] rounded-lg flex items-center justify-center gap-1 hover:border-[#A0ED70] hover:text-[#A0ED70] text-[#A2ADA5] text-xs font-mono transition-colors">
+                <span class="text-[#F5F7F3]">LinkedIn</span>
+                <span class="text-[9px] text-[#717D74]">&nearr;</span>
+              </a>
+              <a href="https://github.com/Coding-Guy-Rehan" target="_blank" rel="noopener noreferrer" class="h-10 bg-[#19211C] border border-[#2A352D] rounded-lg flex items-center justify-center gap-1 hover:border-[#A0ED70] hover:text-[#A0ED70] text-[#A2ADA5] text-xs font-mono transition-colors">
+                <span class="text-[#F5F7F3]">GitHub</span>
+                <span class="text-[9px] text-[#717D74]">&nearr;</span>
+              </a>
+            </div>
+
+            <a href="#contact" class="flex items-center justify-center h-14 bg-[#121815] border border-[#2A352D] rounded-lg mt-1 group hover:bg-[#1A231E] transition-colors gap-4">
+              <span class="font-medium text-[15px] text-[#F5F7F3]">Discuss a role</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5F7F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client perspective (Testimonial) -->
+    <section class="max-w-[1440px] mx-auto px-6 md:px-20 py-24 flex flex-col gap-10 overflow-hidden relative">
+      <!-- Gradient atmosphere -->
+      <div class="absolute w-[1000px] h-[600px] pointer-events-none rounded-full left-[210px] top-[20px]" style="background: radial-gradient(circle at 50% 50%, rgba(61, 105, 53, 0.25) 0%, rgba(31, 79, 51, 0.13) 50%, rgba(10, 13, 12, 0) 100%);"></div>
+
+      <div class="flex flex-col gap-5 z-10">
+        <div class="flex items-center gap-2.5">
+          <div class="w-3.5 h-[2px] bg-[#A0ED70]"></div>
+          <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">04 / Client perspective</span>
+        </div>
+        <h2 class="font-semibold text-5xl leading-[1.12em] text-[#F5F7F3]">Good code. Better collaboration.</h2>
+      </div>
+
+      <!-- Testimonial Carousel -->
+      <div class="relative z-10 px-0 md:px-[120px] mt-6 md:mt-12">
+        <!-- Rotated Backing Card -->
+        <div class="absolute left-4 right-4 md:left-[134px] md:right-[134px] top-[18px] md:top-[18px] h-full min-h-[300px] bg-[#18221A] border border-[#324336] rounded-3xl transform rotate-[2deg] translate-y-4 md:translate-y-6 z-0"></div>
+        
+        <!-- Main Card -->
+        <div id="testimonial-card" class="relative z-10 flex flex-col p-8 md:p-12 gap-6 bg-[rgba(23,32,27,0.9)] border border-[#40553E] rounded-3xl shadow-[0_20px_45px_0_rgba(0,0,0,0.6)] backdrop-blur-md transform transition-all duration-300 min-h-[340px] md:min-h-[360px]">
+          <div class="flex justify-between items-center w-full flex-wrap gap-3">
+            <div class="flex items-center gap-3">
+              <span class="font-semibold text-[44px] text-[#A0ED70] leading-[0.7em] select-none">"</span>
+              <div class="flex text-[#A0ED70] text-sm tracking-widest" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+            </div>
+            <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-[#121815] border border-[#2A352D]">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#1dbf73]"></span>
+              <span class="font-mono text-[9px] text-[#A0ED70] tracking-widest uppercase">VERIFIED FIVERR REVIEW</span>
+            </div>
+          </div>
+          
+          <p id="testimonial-text" class="text-[19px] md:text-[24px] text-[#F5F7F3] leading-[1.55em] font-light">
+            It was my first time working with Rehan, and I’m really glad I chose him. While others were charging unreasonable prices, Rehan offered a fair rate and completed the job promptly. I’m very satisfied with his work — excellent job, sir!
+          </p>
+          
+          <div class="flex items-center gap-3.5 mt-auto pt-4 border-t border-[#2A352D]/60">
+            <div class="w-11 h-11 rounded-full bg-[#19211C] border border-[#486046] flex items-center justify-center shrink-0 shadow-md">
+              <span id="testimonial-avatar" class="font-mono text-xs text-[#A0ED70] font-bold">IM</span>
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <span id="testimonial-author" class="font-medium text-[15px] text-[#F5F7F3]">ibrahimmahboab</span>
+              <span id="testimonial-role" class="text-[12px] text-[#717D74] flex items-center gap-1.5">🇨🇦 Canada • 5.0 Star Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel controls -->
+      <div class="flex justify-between items-center px-0 md:px-[120px] z-10 mt-8 md:mt-6 relative">
+        <div class="flex items-center gap-2">
+          <div id="testimonial-dots" class="flex items-center gap-2">
+            <!-- Dynamic dots generated in main.js -->
+          </div>
+          <span id="testimonial-count" class="font-mono text-[10px] text-[#A2ADA5] ml-2 tracking-widest"> 01 / 05</span>
+        </div>
+        <div class="flex gap-2.5">
+          <button id="prev-testimonial" class="w-10 h-10 rounded-full bg-[#0A0D0C] border border-[#2A352D] flex items-center justify-center cursor-pointer hover:bg-[#121815] transition-colors focus:outline-none" aria-label="Previous testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5F7F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+          <button id="next-testimonial" class="w-10 h-10 rounded-full bg-[#19211C] border border-[#6A9F50] flex items-center justify-center cursor-pointer hover:bg-[#2A352D] transition-colors focus:outline-none" aria-label="Next testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A0ED70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="bg-[#101712] border-t border-[#2A352D] pt-24 pb-7 relative overflow-hidden">
+      <!-- Gradient atmosphere -->
+      <div class="absolute w-[1100px] h-[700px] pointer-events-none rounded-full left-[-220px] top-[-40px]" style="background: radial-gradient(circle at 50% 50%, rgba(61, 105, 53, 0.25) 0%, rgba(31, 79, 51, 0.13) 50%, rgba(10, 13, 12, 0) 100%);"></div>
+      
+      <div class="max-w-[1440px] mx-auto px-6 md:px-20 flex flex-col gap-16 relative z-10">
+        
+        <div class="flex flex-col lg:flex-row gap-16 lg:gap-[120px]">
+          <!-- Contact Introduction -->
+          <div class="flex flex-col gap-7 flex-1">
+            <div class="flex flex-col gap-5">
+              <div class="flex items-center gap-2.5">
+                <div class="w-3.5 h-[2px] bg-[#A0ED70]"></div>
+                <span class="font-mono text-[11px] text-[#A2ADA5] uppercase tracking-wider">05 / Let’s build something</span>
+              </div>
+              <h2 class="font-semibold text-[44px] md:text-[64px] leading-[1.05em] text-[#F5F7F3]">
+                Your next chapter.<br>
+                <span class="text-[#A0ED70]">Built on Shopify.</span>
+              </h2>
+            </div>
+            
+            <p class="text-[#A2ADA5] text-base leading-[1.65em] max-w-xl">
+              A new storefront, a smarter cart or a theme that finally feels like you. Tell me what you’re imagining — let’s find the right way to build it.
+            </p>
+            
+            <div class="flex flex-col gap-4 mt-2">
+              <span class="font-mono text-[10px] text-[#717D74]">PREFER EMAIL?</span>
+              <a href="mailto:rehanahmad.dev@gmail.com" class="flex items-center gap-3.5 group w-fit text-[#F5F7F3] text-[22px] md:text-[25px] hover:text-[#A0ED70] transition-colors">
+                rehanahmad.dev@gmail.com
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+            
+            <div class="w-full h-[1px] bg-[#2A352D] my-4"></div>
+            
+            <div class="flex flex-col gap-2.5">
+              <span class="font-mono text-[10px] text-[#717D74] uppercase tracking-wider">CONNECT DIRECTLY</span>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://www.fiverr.com/s/emmWpkg" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg border border-[#2A352D] bg-[#121815] hover:border-[#A0ED70] hover:text-[#A0ED70] text-[#A2ADA5] text-xs font-mono transition-all flex items-center gap-2 group">
+                  <span class="font-medium text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">Fiverr</span>
+                  <span class="text-[9px] text-[#A0ED70] bg-[#1F4F33]/40 px-1.5 py-0.5 rounded border border-[#A0ED70]/40 font-mono">5.0 ★</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rehan-ahmad-540491253" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg border border-[#2A352D] bg-[#121815] hover:border-[#A0ED70] hover:text-[#A0ED70] text-[#A2ADA5] text-xs font-mono transition-all flex items-center gap-2 group">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="text-[#A2ADA5] group-hover:text-[#A0ED70] transition-colors"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  <span class="font-medium text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">LinkedIn</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://github.com/Coding-Guy-Rehan" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg border border-[#2A352D] bg-[#121815] hover:border-[#A0ED70] hover:text-[#A0ED70] text-[#A2ADA5] text-xs font-mono transition-all flex items-center gap-2 group">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="text-[#A2ADA5] group-hover:text-[#A0ED70] transition-colors"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span class="font-medium text-[#F5F7F3] group-hover:text-[#A0ED70] transition-colors">GitHub</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Enquiry Form -->
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="flex flex-col bg-[rgba(23,32,27,0.85)] border border-[#364A37] p-8 rounded-3xl w-full lg:w-[580px] gap-6" novalidate>
+            <input type="hidden" name="access_key" value="dabbc73f-ab49-415b-b8be-ee4731ebd4b7">
+            <div class="flex flex-col gap-2">
+              <h3 class="font-medium text-[22px] text-[#F5F7F3]">Tell me about your project</h3>
+              <p class="text-[#A2ADA5] text-xs">A little context is the best place to start.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="flex flex-col flex-1">
+                <label for="name" class="text-[#F5F7F3] text-xs font-medium mb-2.5">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Alex Morgan" class="h-12 bg-[#0D120F] border border-[#2A352D] rounded-lg px-3.5 text-[13px] text-[#F5F7F3] placeholder-[#717D74] focus:outline-none focus:border-[#A0ED70] transition-colors">
+                <span id="name-error" class="text-red-500 text-[10px] hidden mt-1">Please enter your name.</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <label for="email" class="text-[#F5F7F3] text-xs font-medium mb-2.5">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@brand.com" class="h-12 bg-[#0D120F] border border-[#2A352D] rounded-lg px-3.5 text-[13px] text-[#F5F7F3] placeholder-[#717D74] focus:outline-none focus:border-[#A0ED70] transition-colors">
+                <span id="email-error" class="text-red-500 text-[10px] hidden mt-1">Please enter a valid email address.</span>
+              </div>
+            </div>
+            
+            <div class="flex flex-col gap-2.5">
+              <label for="store_url" class="text-[#F5F7F3] text-xs font-medium">Store URL <span class="text-[#717D74]">(optional)</span></label>
+              <input type="text" id="store_url" name="store_url" placeholder="your-store.myshopify.com" class="h-12 bg-[#0D120F] border border-[#2A352D] rounded-lg px-3.5 text-[13px] text-[#F5F7F3] placeholder-[#717D74] focus:outline-none focus:border-[#A0ED70] transition-colors">
+            </div>
+            
+            <div class="flex flex-col gap-2.5">
+              <span class="text-[#F5F7F3] text-xs font-medium">What can I help with?</span>
+              <div class="flex flex-wrap gap-2">
+                <label class="cursor-pointer">
+                  <input type="radio" name="project_type" value="Custom theme" class="peer hidden" checked>
+                  <div class="px-2.5 py-2 bg-[#0D120F] border border-[#2A352D] rounded-md hover:border-[#6A9F50] transition-colors peer-checked:bg-[#182A15] peer-checked:border-[#6A9F50] peer-checked:text-[#A0ED70] text-[#A2ADA5]">
+                    <span class="text-[11px] inherit-text">Custom theme</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="project_type" value="Cart drawer" class="peer hidden">
+                  <div class="px-2.5 py-2 bg-[#0D120F] border border-[#2A352D] rounded-md hover:border-[#6A9F50] transition-colors peer-checked:bg-[#182A15] peer-checked:border-[#6A9F50] peer-checked:text-[#A0ED70] text-[#A2ADA5]">
+                    <span class="text-[11px] inherit-text">Cart drawer</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="project_type" value="Theme blocks" class="peer hidden">
+                  <div class="px-2.5 py-2 bg-[#0D120F] border border-[#2A352D] rounded-md hover:border-[#6A9F50] transition-colors peer-checked:bg-[#182A15] peer-checked:border-[#6A9F50] peer-checked:text-[#A0ED70] text-[#A2ADA5]">
+                    <span class="text-[11px] inherit-text">Theme blocks</span>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="project_type" value="Other" class="peer hidden">
+                  <div class="px-2.5 py-2 bg-[#0D120F] border border-[#2A352D] rounded-md hover:border-[#6A9F50] transition-colors peer-checked:bg-[#182A15] peer-checked:border-[#6A9F50] peer-checked:text-[#A0ED70] text-[#A2ADA5]">
+                    <span class="text-[11px] inherit-text">Other</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            
+            <div class="flex flex-col">
+              <label for="message" class="text-[#F5F7F3] text-xs font-medium mb-2.5">Project details</label>
+              <textarea id="message" name="message" placeholder="Your vision, priorities and ideal timeline…" class="h-28 bg-[#0D120F] border border-[#2A352D] rounded-lg p-3.5 text-[13px] text-[#F5F7F3] placeholder-[#717D74] resize-none focus:outline-none focus:border-[#A0ED70] transition-colors"></textarea>
+              <span id="message-error" class="text-red-500 text-[10px] hidden mt-1">Please provide project details.</span>
+            </div>
+
+            <button type="submit" class="h-14 bg-[#A0ED70] text-[#10200D] font-semibold text-[15px] rounded-lg flex items-center justify-center gap-3 hover:bg-[#B7FF8D] transition-colors shadow-[0_0_28px_1px_rgba(159,232,112,0.21)] mt-2 group">
+              Send project enquiry
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+            
+            <p class="text-[#717D74] text-[10px] leading-[1.6em]">Hiring instead? Share the role and a little about your team.</p>
+          </form>
+        </div>
+        
+        <!-- Footer details -->
+        <div class="flex flex-col gap-7 pt-7">
+          <div class="w-full h-[1px] bg-[#2A352D]"></div>
+          
+          <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+              <span class="font-mono text-xl text-[#A0ED70]">{/}</span>
+              <span class="font-medium text-sm text-[#F5F7F3]">rehanahmad.dev</span>
+            </div>
+            
+            <div class="flex items-center gap-6 text-xs font-mono text-[#A2ADA5]">
+              <a href="https://www.fiverr.com/s/emmWpkg" target="_blank" rel="noopener noreferrer" class="hover:text-[#A0ED70] transition-colors flex items-center gap-1.5">
+                <span>Fiverr</span>
+                <span class="text-[9px] text-[#A0ED70] bg-[#1F4F33]/40 px-1 py-0.2 rounded border border-[#A0ED70]/40">5.0★</span>
+                <span class="text-[9px] text-[#717D74]">&nearr;</span>
+              </a>
+              <a href="https://www.linkedin.com/in/rehan-ahmad-540491253" target="_blank" rel="noopener noreferrer" class="hover:text-[#A0ED70] transition-colors flex items-center gap-1">
+                <span>LinkedIn</span>
+                <span class="text-[9px] text-[#717D74]">&nearr;</span>
+              </a>
+              <a href="https://github.com/Coding-Guy-Rehan" target="_blank" rel="noopener noreferrer" class="hover:text-[#A0ED70] transition-colors flex items-center gap-1">
+                <span>GitHub</span>
+                <span class="text-[9px] text-[#717D74]">&nearr;</span>
+              </a>
+            </div>
+
+            <span class="text-[#717D74] text-[10px]">&copy; 2026 Rehan Ahmad. Crafted with intention.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
